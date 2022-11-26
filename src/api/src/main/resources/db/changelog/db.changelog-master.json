@@ -1,0 +1,13 @@
+{
+  "databaseChangeLog": [
+    {
+      "preConditions": [
+        {
+          "runningAs": {
+            "username": "api_db_user"
+          }
+        }
+      ]
+    }
+  ]
+}
