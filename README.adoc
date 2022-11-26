@@ -1,0 +1,11 @@
+= Kotlin clean architecture
+
+== Goals
+
+The goal of this project is to practice with different technologies and tools within the Kotlin ecosystem, as well as to illustrate concepts of 'clean architecture'.
+
+The project will consist of several interconnected services with differentiated responsibilities. Each of them may be built with different libraries or resources.
+
+== Architecture
+
+image::res/img/architecture.png[align="center",width=500,alt="Architecture diagram for the services. The project will contain 3 services: api, worker and external api"]
