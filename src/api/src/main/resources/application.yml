@@ -1,8 +1,29 @@
+info:
+  app:
+    name: API - Kotlin clean architecture
+    description: HTTP API for our awesome social app 'barkify.io'
+    author: marcosDLCS
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  info:
+    env:
+      enabled: true # Needed for custom info.app information
+    java:
+      enabled: true
+    os:
+      enabled: true
+server:
+  shutdown: graceful # https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#web.graceful-shutdown
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/api
     username: api_db_user
     password: api_db_password
     driverClassName: org.postgresql.Driver
+  lifecycle:
+    timeout-per-shutdown-phase: 10s
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.json
