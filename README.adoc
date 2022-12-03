@@ -1,11 +1,63 @@
 = Kotlin clean architecture
+:toc:
 
 == Goals
 
-The goal of this project is to practice with different technologies and tools within the Kotlin ecosystem, as well as to illustrate concepts of 'clean architecture'.
+The goal of this project is to **practice with different technologies and tools within the Kotlin ecosystem**, as well as to **illustrate concepts of 'clean architecture'**.
 
-The project will consist of several interconnected services with differentiated responsibilities. Each of them may be built with different libraries or resources.
+The project will consist of **several interconnected services with differentiated responsibilities**. Each of them may be built with different libraries or resources.
+
+The domain of the project will be the simulation of **a simple social network in which to register users and publish messages** that will travel between the different services enriching them.
+
+Each project will contain readme-like text documents listing and explaining different concepts. The code will also sometimes contain comment blocks giving further explanation of the decisions taken.
 
 == Architecture
 
-image::res/img/architecture.png[align="center",width=500,alt="Architecture diagram for the services. The project will contain 3 services: api, worker and external api"]
+++++
+<p align="center">
+  <img style="width:650px" src="res/img/architecture.png" alt="Architecture diagram for the services. The project will contain 3 services: api, worker and external api">
+</p>
+++++
+
+== Tools
+
+One of the main motivations of the project is to have a playground to test new tools or libraries that I can't use in my day-to- day life or that I want to go deeper into.
+
+The following list contains a selection of projects that I would like to include in the different services of the repository.
+
+=== Persistence
+
+* PostgreSQL: https://www.postgresql.org/
+* MongoDB: https://www.mongodb.com/
+* Redis: https://redis.io/
+
+=== Messaging
+
+* Kafka KRaft mode:
+** https://kafka.apache.org/
+** https://cwiki.apache.org/confluence/display/KAFKA/KIP-833%3A+Mark+KRaft+as+Production+Ready
+
+=== Frameworks
+
+* Spring Framework 6: https://spring.io/projects/spring-framework
+* Spring Boot 3: https://spring.io/projects/spring-boot
+* Ktor: https://ktor.io/
+
+=== Libraries
+
+* Liquibase: https://www.liquibase.org/
+* Arrow Kt: https://arrow-kt.io/
+* Spring Data Redis: https://spring.io/projects/spring-data-redis/
+
+=== Testing
+
+* Testcontainers: https://www.testcontainers.org/
+* Kotest: https://kotest.io/
+* Mockk: https://mockk.io/
+* ArchUnit: https://www.archunit.org/
+* JsonUnit: https://github.com/lukas-krecan/JsonUnit
+
+=== Concepts
+
+* Time Sortable Identifiers (TSID): https://github.com/f4b6a3/tsid-creator
+* Specification pattern: https://en.wikipedia.org/wiki/Specification_pattern
